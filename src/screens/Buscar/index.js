@@ -1,12 +1,11 @@
 import React from 'react';
-import { View, Image, TextInput, Text } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { TextInput, Image  } from 'react-native';
 import Footer from '../../components/Footer';
 import { Container, TopContainer, Logo, Content, Title, SearchInput, SearchIconContainer, FooterContainer } from './styles';
 
 import logo from '../../assets/logo.png';
 
-export default function Busca() {
+export default function Buscar() {
   return (
     <Container>
       <TopContainer>
@@ -18,7 +17,10 @@ export default function Busca() {
       <SearchInput>
         <TextInput placeholder="Realizar busca" />
         <SearchIconContainer>
-          <Icon name="arrow-right" size={24} color="white" />
+          <Image
+            source={require('../../assets/enviar.png')} 
+            style={{ width: 10, height: 10 }} 
+          />
         </SearchIconContainer>
       </SearchInput>
       <FooterContainer>

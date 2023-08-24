@@ -33,10 +33,17 @@ export const ProfileIcon = styled(FontAwesome)`
   color: white;
 `;
 
+export const Profile = styled.View`
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+`;
+
 export const ProfileText = styled.Text`
   color: white;
   font-weight: bold;
   margin-top: 10px;
+  margin-right: 20px; 
   text-align: center;
 `;
 
@@ -44,25 +51,22 @@ export const ProfileArrowIcon = styled(FontAwesome)`
   color: white;
 `;
 
-export const TextContainer = styled.View`
-  padding: 20px;
-`;
-
-export const TextRow = styled.View`
+export const TextContainer = styled.TouchableOpacity`
   flex-direction: row;
   align-items: center;
-  margin-vertical: 10px;
+  justify-content: space-between;
+  padding: 20px;
 `;
 
 export const TextItem = styled.Text`
   color: black;
   font-size: 18px;
-  flex: 1;
+  font-weight: bold;
 `;
 
 export const TextArrowIcon = styled(FontAwesome)`
   color: black;
-  margin-left: 10px;
+
 `;
 
 export const Line = styled.View`

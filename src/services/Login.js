@@ -11,5 +11,3 @@ export async function LoginUsuario(email, senha) {
     console.log('err', error)
   }
 }
-
-

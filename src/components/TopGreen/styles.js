@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 import { FontAwesome } from '@expo/vector-icons';
 
 export const TopSquare = styled.View`
-  width: 360px;
+  width: 100%;
   height: 72px;
   background-color: #65A30D;
   flex-direction: row;

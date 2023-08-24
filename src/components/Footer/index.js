@@ -1,22 +1,39 @@
 import React from 'react';
-import { AntDesign, FontAwesome, Feather } from '@expo/vector-icons';
+import { Image, TouchableOpacity } from 'react-native';
 import { FooterContainer, IconContainer, IconText } from './styles';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Footer() {
+  const navigation = useNavigation();
   return (
     <FooterContainer>
-      <IconContainer>
-        <AntDesign name="flower1" size={24} color="white" />
-        <IconText>Inicio</IconText>
-      </IconContainer>
-      <IconContainer>
-        <Feather name="search" size={24} color="white" />
-        <IconText>Busca</IconText>
-      </IconContainer>
-      <IconContainer>
-        <FontAwesome name="user" size={24} color="white" />
-        <IconText>Perfil</IconText>
-      </IconContainer>
+      <TouchableOpacity onPress={() => navigation.navigate('Servicos')}>
+        <IconContainer>
+          <Image
+            source={require('../../assets/flower.svg')} 
+            style={{ width: 24, height: 24 }} 
+          />
+          <IconText>Início</IconText>
+        </IconContainer>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Buscar')}>
+        <IconContainer>
+          <Image
+            source={require('../../assets/search.svg')} 
+            style={{ width: 24, height: 24 }} 
+          />
+          <IconText>Buscar</IconText>
+        </IconContainer>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Conta')}>
+        <IconContainer>
+          <Image
+            source={require('../../assets/perfil.svg')} 
+            style={{ width: 24, height: 24 }} 
+          />
+          <IconText>Perfil</IconText>
+        </IconContainer>
+      </TouchableOpacity>
     </FooterContainer>
   );
 }

@@ -17,7 +17,6 @@ export default function Cadastrar() {
 
   async function handleCadastro() {
     try {
-      console.log('Console')
       const response = await CadastrarUsuario(nome, cpf, email, senha);
       console.log('Usuário cadastrado:', response);
       navigation.navigate('Login');

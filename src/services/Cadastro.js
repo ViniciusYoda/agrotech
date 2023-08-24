@@ -11,5 +11,3 @@ export async function CadastrarUsuario(nome, cpf, email, senha) {
     console.log('err', error)
   }
 }
-
-

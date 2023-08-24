@@ -11,8 +11,10 @@ import {
   ButtonContainer,
 } from './styles';
 import TopGreen from '../../components/TopGreen'
+import { useNavigation } from '@react-navigation/native';
 
 export default function Perfil() {
+  const navigation = useNavigation()
   return (
     <Container>
       <TopGreen text="Visualizar Perfil" />
@@ -27,7 +29,7 @@ export default function Perfil() {
         <ProfileValue>XXX.XXX.XXX-XX</ProfileValue>
       </ProfileSection>
       <ButtonContainer>
-        <Button title="SAIR" />
+        <Button title="SAIR" onPress={() => navigation.navigate('Servicos')}/>
       </ButtonContainer>
     </Container>
   );

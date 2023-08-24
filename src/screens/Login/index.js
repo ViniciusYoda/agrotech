@@ -5,8 +5,10 @@ import Button from '../../components/Button';
 import { Container, LogoContainer, Logo, InputContainer, CreateAccountText } from './styles';
 import logo from '../../assets/logo.png';
 import { LoginUsuario } from '../../services/Login';
+import { useNavigation } from '@react-navigation/native';
 
-export default function Login({ navigation }) {
+export default function Login() {
+  const navigation = useNavigation()
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
 
