@@ -7,7 +7,7 @@ export default function Footer() {
   const navigation = useNavigation();
   return (
     <FooterContainer>
-      <TouchableOpacity onPress={() => navigation.navigate('Servicos')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Inicio')}>
         <IconContainer>
           <Image
             source={require('../../assets/flower.svg')} 

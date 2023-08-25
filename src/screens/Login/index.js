@@ -6,26 +6,27 @@ import { Container, LogoContainer, Logo, InputContainer, CreateAccountText } fro
 import logo from '../../assets/logo.png';
 import { LoginUsuario } from '../../services/Login';
 import { useNavigation } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function Login() {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
 
-  function handleCreateAccount() {
-    navigation.navigate('Cadastrar');
-  }
-
   async function handleLogin() {
     try {
-      console.log('Console')
-      const response = await LoginUsuario(email, senha);
-      console.log('Usuário logado:', response);
-      navigation.navigate('Login');
+      console.log('Console');
+      const token = await LoginUsuario(email, senha);
+      console.log('Token de acesso:', token);
+      await AsyncStorage.setItem('authToken', token);
+      navigation.navigate('Inicio');
     } catch (error) {
       console.error('Erro ao logar usuário:', error);
-
     }
+  }
+
+  function handleCreateAccount() {
+    navigation.navigate('Cadastrar');
   }
 
   return (

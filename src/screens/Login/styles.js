@@ -4,7 +4,7 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, #A9A9A9,  #FFFFFF);  
+  background-image: linear-gradient(to right, #A9A9A9, #FFFFFF);  
   padding: 20px;
 `;
 
@@ -27,7 +27,7 @@ export const InputContainer = styled.View`
 export const CreateAccountText = styled.Text`
   align-self: flex-start;
   margin-top: -25px;
-  margin-left: -120px;
+  margin-right: 166px;
   font-size: 14px;
   color: black;
 `;
