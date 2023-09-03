@@ -1,18 +1,16 @@
-import {   TopSquare,
-  CloseIcon,
-  Title,
-} from './styles'
+import React from 'react';
+import { TopSquare, Icon, Title } from './styles';
 import { TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-export default function TopGreen({text}) {
+export default function TopGreen({ text, iconName = 'times-circle' }) {
   const navigation = useNavigation();
   return (
-      <TopSquare>
+    <TopSquare>
       <TouchableOpacity onPress={() => navigation.navigate('Servicos')}>
-        <CloseIcon name="times-circle" size={24} />
+        <Icon name={iconName} size={24} />
       </TouchableOpacity>
-        <Title>{text}</Title>
-      </TopSquare>
-  )
+      <Title>{text}</Title>
+    </TopSquare>
+  );
 }

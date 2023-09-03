@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components/native';
 import Header from '../../components/Header';
 import Input from '../../components/Input';

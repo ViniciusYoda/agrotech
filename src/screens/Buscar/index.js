@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextInput, Image, TouchableOpacity } from 'react-native'; 
+import { TextInput, Image, TouchableOpacity, Text } from 'react-native'; 
 import Footer from '../../components/Footer';
 import { Container, TopContainer, Logo, Content, Title, SearchInput, SearchIconContainer, FooterContainer } from './styles';
 import logo from '../../assets/logo.png';
@@ -12,7 +12,7 @@ export default function Buscar() {
   const handleEnviarPergunta = async () => {
     try {
       const respostaDoServidor = await enviarPergunta(pergunta);
-      setResposta(respostaDoServidor);
+      setResposta(respostaDoServidor.choices[0].message.content);
       setPergunta(''); 
     } catch (error) {
       console.log('Erro ao enviar pergunta:', error);
@@ -22,7 +22,7 @@ export default function Buscar() {
   const handleObterRespostaPorId = async (id) => {
     try {
       const respostaPorId = await obterRespostaPorId(id);
-      setResposta(respostaPorId);
+      setResposta(respostaPorId.choices[0].message.content);
     } catch (error) {
       console.log('Erro ao obter resposta por ID:', error);
     }
@@ -36,7 +36,9 @@ export default function Buscar() {
       <Content>
         {resposta === '' ? (
           <Title>No Agro+ você consegue realizar pesquisas em tempo real sobre o que quiser do mundo Agro!</Title>
-        ) : null}
+        ) : (
+          <Text>{resposta}</Text>
+        )}
       </Content>
       <SearchInput>
         <TextInput

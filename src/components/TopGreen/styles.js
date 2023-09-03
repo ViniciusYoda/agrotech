@@ -1,4 +1,3 @@
-
 import styled from 'styled-components/native';
 import { FontAwesome } from '@expo/vector-icons';
 
@@ -11,7 +10,7 @@ export const TopSquare = styled.View`
   padding: 0 20px;
 `;
 
-export const CloseIcon = styled(FontAwesome)`
+export const Icon = styled(FontAwesome)`
   color: white;
   font-size: 24px;
 `;

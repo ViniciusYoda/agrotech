@@ -7,7 +7,7 @@ export async function enviarPergunta(pergunta) {
 
   const headers = {
     'Content-Type': 'application/json',
-    Authorization: `Bearer ${authToken}`,
+    'Authorization': `Bearer ${authToken}`,
   };
 
   const requestBody = { quest: pergunta };
