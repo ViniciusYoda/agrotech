@@ -14,7 +14,7 @@ import Climas from './screens/Climas';
 import Milho from './screens/Milho';
 import Equatorial from './screens/Equatorial'
 
-export default function Rotas() {
+export default function routes() {
   
   return (
     <NavigationContainer>
