@@ -29,6 +29,11 @@ export const SearchInput = styled.View`
   margin: 0 20px;
 `;
 
+export const Input = styled.TextInput`
+  height: 44px;
+  margin-left: 10px;
+`
+
 export const IconRow = styled.View`
   flex-direction: row;
   justify-content: space-around;
@@ -38,7 +43,8 @@ export const IconRow = styled.View`
 `;
 
 export const IconContainer = styled.View`
-  background-color: #65A30D;
+  background-color: #D3D3D3;
+  border: 1px solid black;
   height: 93px;
   width: 93px;
   border-radius: 10px;
@@ -47,7 +53,7 @@ export const IconContainer = styled.View`
 `;
 
 export const IconText = styled.Text`
-  color: white;
+  color: black;
   font-size: 14px;
   margin-top: 4px;
 `;

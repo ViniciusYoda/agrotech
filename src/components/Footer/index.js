@@ -10,8 +10,8 @@ export default function Footer() {
       <TouchableOpacity onPress={() => navigation.navigate('Inicio')}>
         <IconContainer>
           <Image
-            source={require('../../assets/flower.svg')} 
-            style={{ width: 24, height: 24 }} 
+            source={require('../../assets/flower.png')} 
+            style={{ width: 34, height: 36 }} 
           />
           <IconText>Início</IconText>
         </IconContainer>
@@ -19,8 +19,8 @@ export default function Footer() {
       <TouchableOpacity onPress={() => navigation.navigate('Buscar')}>
         <IconContainer>
           <Image
-            source={require('../../assets/search.svg')} 
-            style={{ width: 24, height: 24 }} 
+            source={require('../../assets/search.png')} 
+            style={{ width: 34, height: 34 }} 
           />
           <IconText>Buscar</IconText>
         </IconContainer>
@@ -28,8 +28,8 @@ export default function Footer() {
       <TouchableOpacity onPress={() => navigation.navigate('Conta')}>
         <IconContainer>
           <Image
-            source={require('../../assets/perfil.svg')} 
-            style={{ width: 24, height: 24 }} 
+            source={require('../../assets/perfil.png')} 
+            style={{ width: 34, height: 34 }} 
           />
           <IconText>Perfil</IconText>
         </IconContainer>

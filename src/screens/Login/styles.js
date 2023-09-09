@@ -4,7 +4,7 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to left, #FFFFFF, #A9A9A9);  
+  background-image: linear-gradient(45deg, #D3D3D3, #FFF);  
   padding: 20px;
 `;
 

@@ -15,15 +15,15 @@ import Milho from './screens/Milho';
 import Equatorial from './screens/Equatorial'
 
 export default function routes() {
-  
+
   return (
     <NavigationContainer>
       <Tab.Navigator>
-      
+      <Tab.Screen name="Inicio" component={Inicio} options={{ headerShown: false }} />
       <Tab.Screen name="Login" component={Login} options={{ headerShown: false }} />
         
         <Tab.Screen name="Cadastrar" component={Cadastrar} options={{ headerShown: false }} />
-         <Tab.Screen name="Inicio" component={Inicio} options={{ headerShown: false }} />
+         
        <Tab.Screen name="Buscar" component={Buscar} options={{ headerShown: false }} />
         <Tab.Screen name="Conta" component={Conta} options={{ headerShown: false }} />
         <Tab.Screen name="Perfil" component={Perfil} options={{ headerShown: false }} />

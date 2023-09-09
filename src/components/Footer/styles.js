@@ -5,7 +5,7 @@ export const FooterContainer = styled.View`
   justify-content: space-around;
   align-items: center;
   background-color: #202020;
-  height: 60px;
+  height: 84px;
 `;
 
 export const IconContainer = styled.View`
@@ -14,6 +14,6 @@ export const IconContainer = styled.View`
 
 export const IconText = styled.Text`
   color: white;
-  font-size: 12px;
-  margin-top: 4px;
+  font-size: 14px;
+  margin-top: 6px;
 `;

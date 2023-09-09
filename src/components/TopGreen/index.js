@@ -7,7 +7,7 @@ export default function TopGreen({ text, iconName = 'times-circle' }) {
   const navigation = useNavigation();
   return (
     <TopSquare>
-      <TouchableOpacity onPress={() => navigation.navigate('Servicos')}>
+      <TouchableOpacity onPress={() => navigation.goBack()}>
         <Icon name={iconName} size={24} />
       </TouchableOpacity>
       <Title>{text}</Title>
