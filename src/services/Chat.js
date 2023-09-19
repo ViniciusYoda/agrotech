@@ -1,22 +1,33 @@
-import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import api from './api'
 
-export async function enviarPergunta(pergunta) {
-  const authToken = await AsyncStorage.getItem('authToken');
+export const setAuthToken = async () => {
+  try {
+    const token = await AsyncStorage.getItem('authToken'); 
+    if (token) {
+      chatService.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+    } else {
+      delete chatService.defaults.headers.common['Authorization'];
+    }
+  } catch (error) {
+    throw error;
+  }
+};
 
-  const headers = {
-    'Content-Type': 'application/json',
-    'Authorization': `Bearer ${authToken}`,
-  };
+export const enviarPergunta = async (pergunta) => {
+  try {
+    await setAuthToken(); 
 
-  const requestBody = { quest: pergunta };
+    const requestData = {
+      quest: pergunta,
+    };
 
-  const response = await api.post('ask', requestBody, { headers });
-
-  return response.data;
-}
-
+    const response = await chatService.post('/ask', requestData);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
 
 export async function obterRespostaPorId(id) {
   try {
