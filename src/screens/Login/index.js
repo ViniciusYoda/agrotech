@@ -14,14 +14,17 @@ export default function Login() {
   const [senha, setSenha] = useState('');
 
   async function handleLogin() {
-    try {
-      const token = await LoginUsuario(email, senha);
-      console.log('Token de acesso:', token);
-      await AsyncStorage.setItem('authToken', token);
-      navigation.navigate('Inicio');
-    } catch (error) {
-      console.error('Erro ao logar usuário:', error);
+    try{
+      const response=await LoginUsuario(email, senha)
+      console.log("Usuario", response)
+      navigation.navigate("Inicio")
+    } catch(error){
+      console.log("Erro", error)
     }
+  }
+
+  function caminho(){
+    navigation.navigate("Inicio")
   }
 
   function handleCreateAccount() {

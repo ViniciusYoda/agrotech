@@ -4,10 +4,8 @@ import Footer from '../../components/Footer';
 import { Container, TopContainer, Logo, Content, Title, SearchInput, SearchIconContainer, FooterContainer } from './styles';
 import logo from '../../assets/logo.png';
 import { enviarPergunta, obterRespostaPorId } from '../../services/Chat'; 
-import { useNavigation } from '@react-navigation/native';
 
-export default function Buscar() {
-  const navigation=useNavigation()
+export default function Resposta() {
   const [pergunta, setPergunta] = useState('');
   const [resposta, setResposta] = useState('');
 
@@ -18,8 +16,10 @@ export default function Buscar() {
         <Logo source={logo} style={{ width: 61, height: 61 }} resizeMode="contain" />
       </TopContainer>
       <Content>
-       
-          <Title>No Agro+ você consegue realizar pesquisas em tempo real sobre o que quiser do mundo Agro!</Title>
+        <Title>O cultivo de milho envolve várias etapas, desde o preparo do solo até a colheita. Aqui está um guia básico sobre como plantar milho:
+Escolha do Local: Escolha um local com bastante luz solar e boa drenagem. O milho adora luz solar direta e solos bem drenados para um crescimento saudável.
+Preparo do Solo: Prepare o solo através de aragem ou escavação para soltar a terra. Remova pedras, ervas daninhas e detritos. Se possível, adicione matéria orgânica, como composto, para melhorar a estrutura do solo e fornecer nutrientes.
+Plantio: O milho pode ser plantado por sementes direto no solo ou através de mudas. Se você optar por semear diretamente, faça fileiras espaçadas apropriadas para a variedade de milho que você está cultivando. As sementes devem ser plantadas a uma profundidade de cerca de 2 a 5 centímetros, dependendo do tamanho da semente.</Title>
       </Content>
       <SearchInput>
         <TextInput
@@ -27,7 +27,7 @@ export default function Buscar() {
           value={pergunta}
           onChangeText={setPergunta}
         />
-        <TouchableOpacity onPress={navigation.navigate("Resposta")}>
+        <TouchableOpacity onPress={() => handleEnviarPergunta()}>
           <Image
             source={require('../../assets/enviar.png')} 
             style={{ width: 21, height: 18 }} 

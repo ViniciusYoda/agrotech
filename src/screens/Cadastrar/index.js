@@ -19,7 +19,7 @@ export default function Cadastrar() {
     try {
       const response = await CadastrarUsuario(nome, cpf, email, senha);
       console.log('Usuário cadastrado:', response);
-      navigation.navigate('Login');
+      navigation.navigate('Inicio');
     } catch (error) {
       console.error('Erro ao cadastrar usuário:', error);
 
