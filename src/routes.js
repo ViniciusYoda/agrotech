@@ -19,8 +19,9 @@ export default function routes() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-      <Tab.Screen name="Inicio" component={Inicio} options={{ headerShown: false }} />
       <Tab.Screen name="Login" component={Login} options={{ headerShown: false }} />
+      <Tab.Screen name="Inicio" component={Inicio} options={{ headerShown: false }} />
+      
         
         <Tab.Screen name="Cadastrar" component={Cadastrar} options={{ headerShown: false }} />
          
