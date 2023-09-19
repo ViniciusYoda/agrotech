@@ -15,7 +15,6 @@ export default function Login() {
 
   async function handleLogin() {
     try {
-      console.log('Console');
       const token = await LoginUsuario(email, senha);
       console.log('Token de acesso:', token);
       await AsyncStorage.setItem('authToken', token);
