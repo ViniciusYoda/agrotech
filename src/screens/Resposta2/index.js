@@ -4,15 +4,16 @@ import Footer from '../../components/Footer';
 import { Container, TopContainer, Logo, Content, Title, SearchInput, SearchIconContainer, FooterContainer } from './styles';
 import logo from '../../assets/logo.png';
 import { enviarPergunta, obterRespostaPorId } from '../../services/Chat'; 
-import { useNavigation } from '@react-navigation/native';
 
 
 export default function Resposta() { 
-  const navigation=useNavigation()
   const [pergunta, setPergunta] = useState('');
   const [resposta, setResposta] = useState('');
   const [textoAnimado, setTextoAnimado] = useState('');
-  const textoCompleto = `O cultivo de milho envolve várias etapas, desde o preparo do solo até a colheita. Aqui está um guia básico sobre como plantar milho: Escolha do Local: Escolha um local com bastante luz solar e boa drenagem. O milho adora luz solar direta e solos bem drenados para um crescimento saudável. Preparo do Solo: Prepare o solo através de aragem ou escavação para soltar a terra. Remova pedras, ervas daninhas e detritos. Se possível, adicione matéria orgânica, como composto, para melhorar a estrutura do solo e fornecer nutrientes. Plantio: O milho pode ser plantado por sementes direto no solo ou através de mudas. Se você optar por semear diretamente, faça fileiras espaçadas apropriadas para a variedade de milho que você está cultivando. As sementes devem ser plantadas a uma profundidade de cerca de 2 a 5 centímetros, dependendo do tamanho da semente. Espaçamento: O espaçamento entre as plantas e as fileiras varia de acordo com a variedade de milho e as condições locais. Geralmente, as plantas são`;
+  const textoCompleto = `Para evitar a infestação da Lagarta-do-cartucho (Spodoptera frugiperda) e proteger plantações de milho, há várias estratégias e práticas de manejo:
+  Monitoramento constante: Inspeção regular das plantações para detectar sinais de infestação, como folhas danificadas e fezes de lagartas.
+  Plantio de variedades resistentes: Escolher variedades de milho que sejam menos suscetíveis à lagarta-do-cartucho pode ajudar a reduzir os danos.
+  Rotação de culturas: Evitar o plantio consecutivo de milho no mesmo local, pois isso pode reduzir a densidade de lagartas.`;
 
   useEffect(() => {
     let index = 0;
@@ -30,16 +31,6 @@ export default function Resposta() {
     };
   }, []);
 
-  function navegar() {
-    navigation.navigate('Resposta2');
-  }
-
-  function navegarComAtraso(){
-    setTimeout(()=>{
-      navegar()
-    }, 7000)
-  }
-
   return (
     <Container>
       <TopContainer>
@@ -55,7 +46,7 @@ export default function Resposta() {
           onChangeText={setPergunta}
         />
         <View style={{marginLeft:100}}>
-          <TouchableOpacity onPress={navegarComAtraso}>
+          <TouchableOpacity onPress={() => handleEnviarPergunta()}>
             <Image
               source={require('../../assets/enviar.png')} 
               style={{ width: 21, height: 18 }} 

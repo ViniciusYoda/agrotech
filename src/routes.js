@@ -14,6 +14,7 @@ import Climas from './screens/Climas';
 import Milho from './screens/Milho';
 import Equatorial from './screens/Equatorial'
 import Resposta from './screens/Resposta'
+import Resposta2 from './screens/Resposta2'
 
 export default function routes() {
 
@@ -34,6 +35,7 @@ export default function routes() {
         <Tab.Screen name="Milho" component={Milho} options={{ headerShown: false }} />
         <Tab.Screen name="Equatorial" component={Equatorial} options={{ headerShown: false }} />
         <Tab.Screen name="Resposta" component={Resposta} options={{ headerShown: false }} />
+        <Tab.Screen name="Resposta2" component={Resposta2} options={{ headerShown: false }} />
       </Tab.Navigator>
     </NavigationContainer>
   );

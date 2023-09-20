@@ -23,10 +23,6 @@ export const Content = styled.View`
 export const Title = styled.Text`
   font-size: 20px;
   font-weight: 500;
-<<<<<<< Updated upstream
-=======
-  line-height: 23px;
->>>>>>> Stashed changes
   text-align: center;
   color: #1A2D05;
 `;
