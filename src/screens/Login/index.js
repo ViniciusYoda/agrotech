@@ -15,7 +15,7 @@ export default function Login() {
 
   async function handleLogin() {
     try{
-      const response=await LoginUsuario(email, senha)
+      const response = await LoginUsuario(email, senha)
       console.log("Usuario", response)
       navigation.navigate("Inicio")
     } catch(error){
