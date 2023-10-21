@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Image, TextInput, Imagem, TouchableOpacity } from 'react-native';
+import React, {useState} from 'react';
+import { View, Image, Text, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Container, TopContainer, HelloText, WelcomeText, SearchInput, Input, IconContainer, IconText, IconRow } from './styles';
 import Footer from '../../components/Footer';
@@ -9,6 +9,7 @@ import AgriculturalNews from '../../components/AgriculturalNews';
 import logo from '../../assets/logo.png'
 
 export default function Inicio() {
+
   const navigation = useNavigation();
   return (
     <Container>
@@ -52,7 +53,7 @@ export default function Inicio() {
           <IconText>Solo</IconText>
         </IconContainer>
       </IconRow>
-      <AgriculturalNews />
+      <AgriculturalNews  />
       <Footer />
     </Container>
   );
