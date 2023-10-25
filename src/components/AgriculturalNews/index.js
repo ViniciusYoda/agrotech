@@ -28,7 +28,7 @@ export default function AgriculturalContent() {
             style={styles.webview}
             javaScriptEnabled
             source={{
-              html: '<script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=144&fonte=Arial%2C%20Helvetica%2C%20sans-serif&tamanho=27pt&largura=1000px&cortexto=333333&corcabecalho=006400&corlinha=228b22&imagem=false&output=js"></script>',
+              html: '<script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=55&fonte=Verdana&tamanho=26pt&largura=1000px&cortexto=000000&corcabecalho=4af069&corlinha=c4c4c4&imagem=true&output=js"></script>',
             }}
           />
         </View>
