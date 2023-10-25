@@ -14,6 +14,7 @@ import Climas from './screens/Climas';
 import Milho from './screens/Milho';
 import Equatorial from './screens/Equatorial';
 import TodasNoticias from './screens/TodasNoticias';
+import TodasCotacao from './screens/TodasCotacao';
 
 export default function routes() {
 
@@ -24,6 +25,8 @@ export default function routes() {
        <Tab.Screen name="Buscar" component={Buscar} options={{ headerShown: false }} />
       <Tab.Screen name="Login" component={Login} options={{ headerShown: false }} />
         <Tab.Screen name="Cadastrar" component={Cadastrar} options={{ headerShown: false }} />
+         
+       
         <Tab.Screen name="Conta" component={Conta} options={{ headerShown: false }} />
         <Tab.Screen name="Perfil" component={Perfil} options={{ headerShown: false }} />
         <Tab.Screen name="Plantas" component={Plantas} options={{ headerShown: false }} />
@@ -31,6 +34,7 @@ export default function routes() {
         <Tab.Screen name="Milho" component={Milho} options={{ headerShown: false }} />
         <Tab.Screen name="Equatorial" component={Equatorial} options={{ headerShown: false }} />
         <Tab.Screen name="TodasNoticias" component={TodasNoticias} options={{ headerShown: false }} />
+        <Tab.Screen name="TodasCotacao" component={TodasCotacao} options={{ headerShown: false }} />
       </Tab.Navigator>
     </NavigationContainer>
   );

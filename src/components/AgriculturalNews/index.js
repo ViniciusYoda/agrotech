@@ -3,12 +3,11 @@ import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import WebView from 'react-native-webview';
 import Swiper from 'react-native-swiper';
 import Noticia from './noticia';
+import Cotacao from './cotacao';
 import { useNavigation } from '@react-navigation/native';
 
 export default function AgriculturalContent() {
-  const navigation = useNavigation()
-
-
+  const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
@@ -16,14 +15,22 @@ export default function AgriculturalContent() {
         <View style={styles.slide}>
           <View style={styles.header}>
             <Text style={styles.label}>Notícias</Text>
-              <TouchableOpacity onPress={() => navigation.navigate('TodasNoticias')}>
-                <Text>Ver Mais</Text>
-              </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('TodasNoticias')}>
+              <Text>Ver Mais</Text>
+            </TouchableOpacity>
           </View>
           <Noticia limit={2} />
         </View>
+
         <View style={styles.slide}>
-          <Text style={styles.label}>Cotações</Text>
+          <View style={styles.header}>
+            <Text style={styles.label}>Cotação</Text>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('TodasCotacao')}>
+              <Text>Ver Mais</Text>
+            </TouchableOpacity>
+          </View>
           <WebView
             style={styles.webview}
             javaScriptEnabled
