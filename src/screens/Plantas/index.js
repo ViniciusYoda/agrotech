@@ -21,6 +21,7 @@ export default function Plantas() {
       <Card
         imageSource={require('../../assets/milho.png')}
         name="Milho"
+        pragas="lagarta-cartucho, cigarrinha-do-milho, pulgão-do-milho, percevejo-castanho e larva alfinete"
         scientificName="Zea mays"
         rota='Milho'
       />
@@ -28,24 +29,28 @@ export default function Plantas() {
       <Card
         imageSource={require('../../assets/soja.png')}
         name="Soja"
+        pragas="Lagarta elasmo"
         scientificName="Glycine max"
         rota='Soja'
       />
       <Card
         imageSource={require('../../assets/cafe.png')}
         name="Café"
+        pragas="Broca-do-café"
         scientificName="Coffea"
         rota='Cafe'
       />
       <Card
         imageSource={require('../../assets/canadeacucar.png')}
         name="Cana de Açucar"
+        pragas="Broca dos rizomas"
         scientificName="Saccharum officinarum"
         rota='CanaDeAcucar'
       />
       <Card
         imageSource={require('../../assets/mandioca.png')}
         name="Mandioca"
+        pragas="Mandarová"
         scientificName="Manihot esculenta"
         rota='Mandioca'
       />
