@@ -5,6 +5,7 @@ import styled from 'styled-components/native';
 
 const Container = styled.View`
   flex: 1;
+  background-color: #D3D3D3
 ` 
 
 export default function Milho() {
