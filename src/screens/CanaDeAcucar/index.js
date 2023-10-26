@@ -7,7 +7,7 @@ const Container = styled.View`
   flex: 1;
 ` 
 
-export default function Cafe() {
+export default function CanaDeAcucar() {
   return (
     <Container>
       <TopGreen text="Cana de Açucar" iconName="times" />
