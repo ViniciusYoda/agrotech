@@ -20,10 +20,6 @@ export default function Inicio() {
           <WelcomeText>Bem vindo ao Agro+</WelcomeText>
         </View>
       </TopContainer>
-      <SearchInput>
-        <Icon name="search" size={24} color="gray" />
-        <Input placeholder="Pesquisa no início" />
-      </SearchInput>
       <IconRow>
         <IconContainer>
         <TouchableOpacity onPress={() => navigation.navigate('Plantas')}>
