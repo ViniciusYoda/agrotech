@@ -43,7 +43,11 @@ const Line = styled.View`
   margin-bottom: 8px;
 `;
 
-export default function Info({ imageSource, name, description }) {
+const Pragas = styled.View`
+  font-Size: 12px;
+`
+
+export default function Info({ imageSource, name, praga, description }) {
   return (
     <InfoContainer>
       <InfoImage source={imageSource} />
@@ -51,6 +55,7 @@ export default function Info({ imageSource, name, description }) {
         <CommonName>Nome comum</CommonName>
         <Name>{name}</Name>
         <Line />
+        <Pragas>{praga}</Pragas>
         <DescriptionName>Descrição</DescriptionName>
         <Description>{description}</Description>
     </InfoContainer>
