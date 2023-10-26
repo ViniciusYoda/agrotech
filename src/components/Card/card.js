@@ -28,9 +28,6 @@ const Name = styled.Text`
   font-weight: bold;
 `;
 
-const Praga = styled.Text`
-  font-size: 10;
-`
 
 const ScientificName = styled.Text`
   color: #888;
@@ -46,7 +43,7 @@ const Line = styled.View`
   background-color: grey;
 `;
 
-export default function Card({ imageSource, name, pragas, scientificName = '', rota }) {
+export default function Card({ imageSource, name, scientificName = '', rota }) {
   const navigation = useNavigation();
 
     const handlePress = () => {
@@ -59,7 +56,6 @@ export default function Card({ imageSource, name, pragas, scientificName = '', r
         <ImageAs source={imageSource} />
         <TextContainer>
           <Name>{name}</Name>
-          <Praga>{pragas}</Praga>
           {scientificName && <ScientificName>{scientificName}</ScientificName>}
         </TextContainer>
         <TouchableOpacity onPress={handlePress}>
