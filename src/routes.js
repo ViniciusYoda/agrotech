@@ -17,6 +17,9 @@ import Cafe from './screens/Cafe';
 import CanaDeAcucar from './screens/CanaDeAcucar';
 import Mandioca from './screens/Mandioca';
 import Equatorial from './screens/Equatorial';
+import Tropical from './screens/Tropical';
+import SubTropical from './screens/SubTropical';
+import Semiarido from './screens/Semiarido';
 import TodasNoticias from './screens/TodasNoticias';
 import TodasCotacao from './screens/TodasCotacao';
 
@@ -92,6 +95,21 @@ export default function routes() {
         <Tab.Screen
           name="Equatorial"
           component={Equatorial}
+          options={{ headerShown: false }}
+        />
+        <Tab.Screen
+          name="Tropical"
+          component={Tropical}
+          options={{ headerShown: false }}
+        />
+        <Tab.Screen
+          name="SubTropical"
+          component={SubTropical}
+          options={{ headerShown: false }}
+        />
+        <Tab.Screen
+          name="Semiarido"
+          component={Semiarido}
           options={{ headerShown: false }}
         />
         <Tab.Screen
