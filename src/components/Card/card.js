@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons'; // Certifique-se de ter importado o FontAwesome corretamente
+import { FontAwesome } from '@expo/vector-icons'; 
 import styled from 'styled-components/native';
 import { useNavigation } from '@react-navigation/native';
 
@@ -28,6 +28,10 @@ const Name = styled.Text`
   font-weight: bold;
 `;
 
+const Praga = styled.Text`
+  font-size: 10;
+`
+
 const ScientificName = styled.Text`
   color: #888;
 `;
@@ -42,7 +46,7 @@ const Line = styled.View`
   background-color: grey;
 `;
 
-export default function Card({ imageSource, name, scientificName = '', rota }) {
+export default function Card({ imageSource, name, pragas, scientificName = '', rota }) {
   const navigation = useNavigation();
 
     const handlePress = () => {
@@ -55,6 +59,7 @@ export default function Card({ imageSource, name, scientificName = '', rota }) {
         <ImageAs source={imageSource} />
         <TextContainer>
           <Name>{name}</Name>
+          <Praga>{pragas}</Praga>
           {scientificName && <ScientificName>{scientificName}</ScientificName>}
         </TextContainer>
         <TouchableOpacity onPress={handlePress}>
