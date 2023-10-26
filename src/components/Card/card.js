@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons'; // Certifique-se de ter importado o FontAwesome corretamente
 import styled from 'styled-components/native';
+import { useNavigation } from '@react-navigation/native';
 
 const CardContainer = styled.View`
   flex-direction: row;
@@ -41,7 +42,12 @@ const Line = styled.View`
   background-color: grey;
 `;
 
-export default function Card({ imageSource, name, scientificName = '' }) {
+export default function Card({ imageSource, name, scientificName = '', rota }) {
+  const navigation = useNavigation();
+
+    const handlePress = () => {
+    navigation.navigate(rota);
+  };
   return (
     <>
 
@@ -51,7 +57,9 @@ export default function Card({ imageSource, name, scientificName = '' }) {
           <Name>{name}</Name>
           {scientificName && <ScientificName>{scientificName}</ScientificName>}
         </TextContainer>
+        <TouchableOpacity onPress={handlePress}>
         <ArrowIcon name="angle-right" size={24} />
+        </TouchableOpacity>
       </CardContainer>
       <Line />
     </>
