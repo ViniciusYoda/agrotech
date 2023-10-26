@@ -11,6 +11,7 @@ import Conta from './screens/Conta';
 import Perfil from './screens/Perfil';
 import Plantas from './screens/Plantas';
 import Climas from './screens/Climas';
+import Solos from './screens/Solos';
 import Milho from './screens/Milho';
 import Soja from './screens/Soja';
 import Cafe from './screens/Cafe';
@@ -20,6 +21,9 @@ import Equatorial from './screens/Equatorial';
 import Tropical from './screens/Tropical';
 import SubTropical from './screens/SubTropical';
 import Semiarido from './screens/Semiarido';
+import Arenoso from './screens/Arenoso';
+import Argiloso from './screens/Argiloso';
+import Humoso from './screens/Humoso';
 import TodasNoticias from './screens/TodasNoticias';
 import TodasCotacao from './screens/TodasCotacao';
 
@@ -68,6 +72,11 @@ export default function routes() {
           options={{ headerShown: false }}
         />
         <Tab.Screen
+          name="Solos"
+          component={Solos}
+          options={{ headerShown: false }}
+        />
+        <Tab.Screen
           name="Milho"
           component={Milho}
           options={{ headerShown: false }}
@@ -110,6 +119,21 @@ export default function routes() {
         <Tab.Screen
           name="Semiarido"
           component={Semiarido}
+          options={{ headerShown: false }}
+        />
+        <Tab.Screen
+          name="Arenoso"
+          component={Arenoso}
+          options={{ headerShown: false }}
+        />
+        <Tab.Screen
+          name="Argiloso"
+          component={Argiloso}
+          options={{ headerShown: false }}
+        />
+        <Tab.Screen
+          name="Humoso"
+          component={Humoso}
           options={{ headerShown: false }}
         />
         <Tab.Screen
