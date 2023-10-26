@@ -14,6 +14,7 @@ export default function Milho() {
       <Info
         imageSource={require('../../assets/MilhoInfo.png')}
         name="Milho"
+        pragas="lagarta-cartucho, cigarrinha-do-milho, pulgão-do-milho, percevejo-castanho e larva alfinete "
         description="O milho, cientificamente conhecido como
 Zea mays, é uma planta cultivada por seus
 grãos comestíveis e é uma das culturas
