@@ -12,6 +12,7 @@ import Perfil from './screens/Perfil';
 import Plantas from './screens/Plantas';
 import Climas from './screens/Climas';
 import Milho from './screens/Milho';
+import Soja from './screens/Soja';
 import Equatorial from './screens/Equatorial';
 import TodasNoticias from './screens/TodasNoticias';
 import TodasCotacao from './screens/TodasCotacao';
@@ -32,6 +33,7 @@ export default function routes() {
         <Tab.Screen name="Plantas" component={Plantas} options={{ headerShown: false }} />
         <Tab.Screen name="Climas" component={Climas} options={{ headerShown: false }} />
         <Tab.Screen name="Milho" component={Milho} options={{ headerShown: false }} />
+        <Tab.Screen name="Soja" component={Soja} options={{ headerShown: false }} />
         <Tab.Screen name="Equatorial" component={Equatorial} options={{ headerShown: false }} />
         <Tab.Screen name="TodasNoticias" component={TodasNoticias} options={{ headerShown: false }} />
         <Tab.Screen name="TodasCotacao" component={TodasCotacao} options={{ headerShown: false }} />
