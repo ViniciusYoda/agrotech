@@ -16,18 +16,18 @@ export default function Solos() {
       <TopGreen text="Solos no Brasil" iconName="arrow-left" />
 
       <Card
-        imageSource={require('../../assets/arenoso.jfif')}
+        imageSource={require('../../assets/arenoso.png')}
         name="Arenoso"
         rota="Arenoso"
       />
 
       <Card
-        imageSource={require('../../assets/argiloso.jfif')}
+        imageSource={require('../../assets/argiloso.png')}
         name="Argiloso"
         rota="Argiloso"
       />
       <Card
-        imageSource={require('../../assets/humoso.jfif')}
+        imageSource={require('../../assets/humoso.png')}
         name="Humoso"
         rota="Humoso"
       />

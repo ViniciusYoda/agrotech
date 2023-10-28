@@ -13,7 +13,7 @@ export default function ClimaSemiArido() {
     <Container>
       <TopGreen text="Clima Semiárido" iconName="times" />
       <Info
-        imageSource={require('../../assets/ClimaSemiarido.jfif')}
+        imageSource={require('../../assets/ClimaSemiarido.png')}
         name="Clima Semiárido"
         description="O clima semiárido é caracterizado por chuvas escassas
 e temperaturas elevadas. Esse ambiente climático apresenta desafios

@@ -13,7 +13,7 @@ export default function SoloHumoso() {
     <Container>
       <TopGreen text="Solo Humoso" iconName="times" />
       <Info
-        imageSource={require('../../assets/SoloHumoso.jfif')}
+        imageSource={require('../../assets/SoloHumoso.png')}
         name="Solo Humoso"
         description="O solo humoso é caracterizado por alto teor de matéria orgânica,
 o que resulta em boa fertilidade e retenção de água. Esse tipo de solo é

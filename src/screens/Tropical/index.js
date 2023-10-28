@@ -13,7 +13,7 @@ export default function ClimaTropical() {
     <Container>
       <TopGreen text="Clima Tropical" iconName="times" />
       <Info
-        imageSource={require('../../assets/ClimaTropical.jfif')}
+        imageSource={require('../../assets/ClimaTropical.png')}
         name="Clima Tropical"
         description="O clima tropical, conhecido por suas altas temperaturas
 e estações distintas de chuva e seca, é adequado para uma

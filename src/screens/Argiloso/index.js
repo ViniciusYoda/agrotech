@@ -13,7 +13,7 @@ export default function SoloArgiloso() {
     <Container>
       <TopGreen text="Solo Argiloso" iconName="times" />
       <Info
-        imageSource={require('../../assets/SoloArgiloso.jfif')}
+        imageSource={require('../../assets/SoloArgiloso.png')}
         name="Solo Argiloso"
         description="O solo argiloso é caracterizado por partículas finas e alta
 retenção de água e nutrientes. Esse tipo de solo é adequado para

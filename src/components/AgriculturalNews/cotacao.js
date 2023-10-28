@@ -24,30 +24,24 @@ export default function Cotacao({ source }) {
             style={styles.webview}
             javaScriptEnabled
             source={{
-              html: '<script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=55&fonte=Verdana&tamanho=26pt&largura=1000px&cortexto=000000&corcabecalho=4af069&corlinha=c4c4c4&imagem=true&output=js"></script>',
+              html: '<script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=4&fonte=Verdana&tamanho=26pt&largura=1000px&cortexto=000000&corcabecalho=4af069&corlinha=c4c4c4&imagem=true&output=js"></script>',
             }}
           />
                     <WebView
             style={styles.webview}
             javaScriptEnabled
             source={{
-              html: '<script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=55&fonte=Verdana&tamanho=26pt&largura=1000px&cortexto=000000&corcabecalho=4af069&corlinha=c4c4c4&imagem=true&output=js"></script>',
+              html: '<script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=68&fonte=Verdana&tamanho=26pt&largura=1000px&cortexto=000000&corcabecalho=4af069&corlinha=c4c4c4&imagem=true&output=js"></script>',
             }}
           />
                     <WebView
             style={styles.webview}
             javaScriptEnabled
             source={{
-              html: '<script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=55&fonte=Verdana&tamanho=26pt&largura=1000px&cortexto=000000&corcabecalho=4af069&corlinha=c4c4c4&imagem=true&output=js"></script>',
+              html: '<script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=69&fonte=Verdana&tamanho=26pt&largura=1000px&cortexto=000000&corcabecalho=4af069&corlinha=c4c4c4&imagem=true&output=js"></script>',
             }}
           />
-                    <WebView
-            style={styles.webview}
-            javaScriptEnabled
-            source={{
-              html: '<script type="text/javascript" src="https://www.noticiasagricolas.com.br/widgets/cotacoes?id=55&fonte=Verdana&tamanho=26pt&largura=1000px&cortexto=000000&corcabecalho=4af069&corlinha=c4c4c4&imagem=true&output=js"></script>',
-            }}
-          />
+                    
     </View>
   );
 }

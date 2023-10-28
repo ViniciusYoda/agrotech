@@ -24,7 +24,7 @@ export default function Climas() {
       <Card
         imageSource={require('../../assets/subtropical.png')}
         name="Clima Subtropical"
-        rota="Subtropical"
+        rota="SubTropical"
       />
       <Card
         imageSource={require('../../assets/semiarido.png')}

@@ -13,7 +13,7 @@ export default function ClimaSubtropical() {
     <Container>
       <TopGreen text="Clima Subtropical" iconName="times" />
       <Info
-        imageSource={require('../../assets/ClimaSubtropical.jfif')}
+        imageSource={require('../../assets/ClimaSubtropical.png')}
         name="Clima Subtropical"
         description="O clima subtropical é caracterizado por estações bem
 definidas, com invernos frios e verões quentes. Esse tipo de clima

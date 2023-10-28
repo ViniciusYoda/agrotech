@@ -13,7 +13,7 @@ export default function SoloArenoso() {
     <Container>
       <TopGreen text="Solo Arenoso" iconName="times" />
       <Info
-        imageSource={require('../../assets/SoloArenoso.jfif')}
+        imageSource={require('../../assets/SoloArenoso.png')}
         name="Solo Arenoso"
         description="O solo arenoso é caracterizado por partículas grandes e
 espaçadas, o que resulta em boa drenagem, mas baixa capacidade de

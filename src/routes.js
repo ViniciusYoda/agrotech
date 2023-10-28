@@ -13,10 +13,10 @@ import Plantas from './screens/Plantas';
 import Climas from './screens/Climas';
 import Solos from './screens/Solos';
 import Milho from './screens/Milho';
-import Soja from './screens/Soja';
 import Cafe from './screens/Cafe';
 import CanaDeAcucar from './screens/CanaDeAcucar';
-import Mandioca from './screens/Mandioca';
+import Arroz from './screens/Arroz';
+import Beterraba from './screens/Beterraba';
 import Equatorial from './screens/Equatorial';
 import Tropical from './screens/Tropical';
 import SubTropical from './screens/SubTropical';
@@ -82,11 +82,6 @@ export default function routes() {
           options={{ headerShown: false }}
         />
         <Tab.Screen
-          name="Soja"
-          component={Soja}
-          options={{ headerShown: false }}
-        />
-        <Tab.Screen
           name="Cafe"
           component={Cafe}
           options={{ headerShown: false }}
@@ -97,8 +92,13 @@ export default function routes() {
           options={{ headerShown: false }}
         />
         <Tab.Screen
-          name="Mandioca"
-          component={Mandioca}
+          name="Arroz"
+          component={Arroz}
+          options={{ headerShown: false }}
+        />
+        <Tab.Screen
+          name="Beterraba"
+          component={Beterraba}
           options={{ headerShown: false }}
         />
         <Tab.Screen
