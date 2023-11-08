@@ -5,7 +5,6 @@ import {
   TouchableOpacity,
   View,
   Text,
-  StyleSheet,
 } from 'react-native';
 import axios from 'axios';
 import {

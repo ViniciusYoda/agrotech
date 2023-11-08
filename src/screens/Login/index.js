@@ -14,18 +14,25 @@ export default function Login() {
   const [senha, setSenha] = useState('');
 
   async function handleLogin() {
-    try{
-      const response = await LoginUsuario(email, senha)
-      console.log("Usuario", response)
-      navigation.navigate("Inicio")
-    } catch(error){
-      console.log("Erro", error)
+    try {
+      const response = await LoginUsuario(email, senha);
+      
+      if (response && response.token) {
+       
+        await AsyncStorage.setItem('token', response.token);
+
+        navigation.navigate("Inicio");
+      } else {
+
+        console.log("Credenciais inválidas");
+
+      }
+    } catch (error) {
+      console.log("Erro ao fazer login:", error);
+  
     }
   }
-
-  function caminho(){
-    navigation.navigate("Inicio")
-  }
+  
 
   function handleCreateAccount() {
     navigation.navigate('Cadastrar');
