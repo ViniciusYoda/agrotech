@@ -52,7 +52,7 @@ export default function Cadastrar() {
         />
         <InputSpacing />
         <Input
-          placeholder="Senha"
+          placeholder="Senha "
           secureTextEntry={true}
           value={senha}
           onChangeText={setSenha}
