@@ -40,7 +40,7 @@ export default function Cadastrar() {
         />
         <InputSpacing />
         <Input
-          placeholder="CPF"
+          placeholder="CPF (xxx.xxx.xxx-xx)"
           value={cpf}
           onChangeText={setCpf}
         />
