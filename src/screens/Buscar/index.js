@@ -19,6 +19,8 @@ import {
 } from './styles';
 import logo from '../../assets/logo.png';
 import Footer from '../../components/Footer';
+import { enviarPergunta, obterRespostaPorId } from '../../service/Chat';
+
  
 export default function Buscar() {
   const [pergunta, setPergunta] = useState('');
@@ -30,26 +32,16 @@ export default function Buscar() {
       Alert.alert('Por favor, insira uma pergunta.');
       return;
     }
- 
-    const response = await fetch(
-      'http://192.168.15.87:3000/perguntas',
-      {
-        // Substitua pelo URL da sua API
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ pergunta }),
-      }
-    );
- 
-    console.log(response);
- 
-    if (response.ok) {
-      const data = await response.json();
-      setResposta(data.resposta);
-    } else {
-      alert('Erro ao processar a pergunta.');
+
+    try {
+      setIsLoading(true);
+      const resposta = await enviarPergunta(pergunta);
+      setResposta(resposta);
+    } catch (error) {
+      console.error('Erro ao processar a pergunta:', error);
+      Alert.alert('Erro ao processar a pergunta.');
+    } finally {
+      setIsLoading(false);
     }
   }
  
